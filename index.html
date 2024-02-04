@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./recipe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar btn btn-dark ">
+        <div class="container-fluid container">
+          <a class="navbar-brand a1">Recipe App</a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" id="dataInput" placeholder="Search for recipes..." aria-label="Search">
+            <button class="btn btn-outline-danger"  type="button" id="searchBut" onclick="getRecipe()">Search</button>
+          </form>
+        </div>
+      </nav>
+     <div class="container">
+        <div id="result" class="row mt-5 container">
+        
+        </div>
+    
+    </div>
+   <!-- The Modal -->
+   <div class="modal" id="recipeModal">
+    <div class="modal-content">
+        <span class="recipe-close-btn" onclick="closeRecipeModal()">&times;</span>
+        <div class="recipe-details-content"></div>
+        <button onclick="printRecipe()">Print Recipe</button>
+    </div>
+</div>
+ 
+</body>
+<script src="./main.js"></script>
+</html>
+
+    
